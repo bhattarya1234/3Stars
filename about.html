@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T.S.E.B.S School</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 1em;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    footer{
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    h3 {
+      color: #3498db;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 0.5em 1em;
+      border: none;
+      cursor: pointer;
+      margin-top: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .content {
+        padding: 0.5em;
+      }
+    }
+    
+    /* Additional Styling */
+    .content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1em;
+    }
+
+    /* Interactive feature */
+    .overflow-hidden {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header>
+   <a name="top"><h1>Three Star's English Boarding School</h1></a>
+  </header>
+  <section class="content">
+    <h2>About Three Star's English Boarding School</h2>
+    <p>Established in 2061, Three Star's English Boarding School is a distinguished educational institution located in the vibrant city of Dhangadi, Nepal. With a legacy spanning over a century, our school has been a catalyst for academic excellence, character development, and community engagement.</p>
+    
+    <h3>Historical Legacy</h3>
+    <p>Three Star's English Boarding School was founded in 2061 by visionary educators who sought to create a nurturing environment for learning. Since then, the school has been a cornerstone of educational innovation and a home to generations of scholars.</p>
+    
+    <h3>Academic Excellence</h3>
+    <p>Our commitment to academic excellence is unwavering. The school boasts a distinguished faculty, cutting-edge curriculum, and state-of-the-art facilities. We empower our students to excel academically and cultivate a lifelong love for learning.</p>
+
+    <h3>Community Engagement</h3>
+    <p>Three Star's English Boarding School takes pride in its strong ties to the local community. Through various outreach programs, social initiatives, and collaborative projects, our students actively contribute to the well-being and development of Dhangadi and its surrounding areas.</p>
+
+    <h3>State-of-the-Art Facilities</h3>
+    <p>We believe in providing an environment that fosters creativity and innovation. Our campus is equipped with modern facilities, including advanced laboratories, a well-stocked library, and interactive learning spaces, ensuring a holistic educational experience.</p>
+
+    <!-- Additional Content -->
+    <img src="lgo.jpg" alt="School Image">
+    <p>Explore the beauty of our campus and witness the vibrant learning atmosphere at TSBSHKS.</p>
+
+    <!-- Add more sections with additional content -->
+
+    <h3>Global Perspective</h3>
+    <p>Recognizing the importance of a global outlook, Three Star's English Boarding School encourages international collaborations, exchange programs, and cultural exchanges. We aim to prepare our students for a diverse and interconnected world.</p>
+
+    <h3>Future-Ready Education</h3>
+    <p>As we look to the future, Three Star's English Boarding School  remains committed to providing a future-ready education. Our students are equipped with the skills, knowledge, and values necessary to navigate the complexities of the 21st century.</p>
+    <hr size="4" color="blue" width="50%" align="center">
+<br>
+   <a href="#top"> <button class="top">Top</button></a>
+    <a href="index.html"> <button class="top"><i class="fa-solid fa-house"></i></button></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Interactive feature -->
+    <button id="toggle-button">Toggle Additional Text</button>
+    <p id="additional-text" class="hidden">Click the button to reveal more about our commitment to excellence and future-ready education.</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 Three Star's English Boarding School. All rights reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const additionalText = document.getElementById('additional-text');
+      const toggleButton = document.getElementById('toggle-button');
+      const body = document.body;
+
+      toggleButton.addEventListener('click', function () {
+        additionalText.classList.toggle('hidden');
+        body.classList.toggle('overflow-hidden');
+      });
+    });
+  </script>
+</body>
+</html>
